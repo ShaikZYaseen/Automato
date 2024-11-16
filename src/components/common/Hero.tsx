@@ -1,19 +1,22 @@
-import React from 'react'
-import { BackgroundBeams } from './ui/BackgroundBeams'
-import tomato from "../../../public/tomato.png"
-import Image from 'next/image'
+import React from 'react';
+import { BackgroundBeams } from './ui/BackgroundBeams';
+import tomato from "../../../public/tomato.png";
+import Image from 'next/image';
 
-type Props = {}
+type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className='text-white h-full w-screen flex-col  items-center justify-between'>
-      <div><p>Automate your workflow</p>
-      <div className='flex'>with <Image src={tomato} className='h-10 w-10 ml-2 rounded-2xl' alt='tomato'></Image></div>
+    <div className="text-white h-screen flex items-center justify-center text-[60px]">
+      <div className="text-center">
+        <p>Automate your workflow</p>
+        <div className="flex justify-center items-center">
+          with&nbsp;<span className="ml-2 font-extrabold font-bold text-[60px]">Automato</span>
+        </div>
       </div>
-    <BackgroundBeams/>
+      <BackgroundBeams />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
